@@ -1,15 +1,13 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 11 21:45:47 2023
-
-@author: santosh Turamari
-"""
-
 from flask import Flask, request, jsonify
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from flask_cors import CORS
 import pickle
+
+import nltk
+nltk.download('vader_lexicon')
+nltk.download('punkt')
+nltk.download('stopwords')
 
 app = Flask(__name__)
 with open('sentiment_model.pkl', 'rb') as model_file:

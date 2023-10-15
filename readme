@@ -1,0 +1,10 @@
+Sentiment Analysis
+------------------
+
+Build Docker
+------------
+docker build -t santoshbt/sentiment_analysis .
+
+Docker Run
+----------
+docker run -p 5000:5000 santoshbt/sentiment_analysis

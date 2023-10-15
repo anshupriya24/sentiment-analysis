@@ -1,6 +1,7 @@
 FROM python:3.9.6-slim-buster
-COPY . /usr/app
-EXPOSE 5000
-WORKDIR /usr/app
+WORKDIR /app
+COPY . /app
 RUN pip install -r requirements.txt
+EXPOSE 5000
+ENV NAME SentimentAnalyzer
 CMD ["python", "sentiment.py"]
