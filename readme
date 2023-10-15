@@ -8,3 +8,7 @@ docker build -t santoshbt/sentiment_analysis .
 Docker Run
 ----------
 docker run -p 5000:5000 santoshbt/sentiment_analysis
+
+In Postman, hit the URL, with POST method
+http://127.0.0.1:5000/predict_sentiment
+
